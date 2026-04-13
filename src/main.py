@@ -10,9 +10,6 @@ import time
 import logging
 from pathlib import Path
 
-# Création de la variable de mesure du temps de traitement
-vartime = datetime.now()
-
 # Création des dossiers logs et reports
 Path("logs").mkdir(exist_ok=True)
 Path("reports").mkdir(exist_ok=True)
@@ -30,6 +27,9 @@ logger = logging.getLogger()
 def main():
     print("🚀 Lancement de la veille automatique...\n")
     logger.info("=== DÉBUT DU SCRIPT ===")
+
+    # Création de la variable de mesure du temps de traitement
+    vartime = datetime.now()
 
     # 1. Récupération des articles RSS récents
     since_date = datetime.now() - timedelta(days=DAYS_BACK)

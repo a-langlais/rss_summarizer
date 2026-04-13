@@ -14,16 +14,14 @@ SMTP_PORT = int(os.getenv("SMTP_PORT", 587))
 
 ### --- RSS Feeds --- ###
 RSS_FEEDS = [
-    "https://www.databricks.com/fr/feed",       # Databricks
-    "hhttps://blogs.microsoft.com/AI/feed/",    # Microsoft AI Blog
-    "https://hf.co/blog/feed.xml",              # Hugging-Face Blog
-    "https://jamesg.blog/hf-papers.xml",        # Hugging-Face Papers
-    "theverge.com/rss/index.xml",               # The Verge
-    "http://www.kdnuggets.com/feed"             # KDnuggets
-    "https://techcrunch.com/feed/",             # TechCrunch
-    "https://towardsdatascience.com/feed",      # Towards Data Science
-    "https://www.cnil.fr/fr/rss.xml",           # CNIL
+    "https://www.databricks.com/fr/feed",           # Databricks
+    "https://www.inria.fr/fr/news_events/rss.xml",  # INRIA
+    "https://towardsdatascience.com/feed",          # Towards Data Science
+    "https://www.datasciencecentral.com/category/technical-topics/data-science/feed",   # Data Science Central
+    "https://machinelearningmastery.com/rss-feed/",  # Machine Learning Mastery
     "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml",      # ScienceDaily
+    "https://www.cnil.fr/fr/rss.xml",               # CNIL
+    "https://www.actuia.com/feed/",                 # ActuaIA
 ]
 
 ### --- Autres paramètres --- ###
